@@ -1,0 +1,38 @@
+$base-padding : 10px;
+$btn-size : 48px;
+$calc-width : 300px;
+$calc-height: 70px;
+
+.calc-screen {
+    width: $calc-width ;
+    height: $calc-height;
+    background-color: lightslategrey;
+}
+
+.calc-buttons{
+    width: $calc-width;
+    margin: 0px;
+    text-align: center;
+}
+
+.calc-btn{
+    list-style: none;
+    display: inline-block;
+    line-height: $btn-size;
+    text-align: center;
+    height: $btn-size;
+    width: $btn-size;
+    border-style: ridge;
+    padding: $base-padding;
+    color: green;
+}
+
+.calc-btn:hover{
+    background-color: lightgreen;
+}
+
+ul{
+    margin: -1rm;
+    padding: 0px;
+}
+    
