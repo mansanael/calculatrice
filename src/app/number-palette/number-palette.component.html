@@ -1,37 +1,40 @@
-<div >
+<div id = "calculatrice" >
     Number Palette works !
     <div class = "calc-screen">
-        Screen
+        
+        {{expression}} <br>
+        {{result}}
+
     </div>
     <div class = "calc-buttons">
         <ul>
-            <li class = "calc-btn">1</li>
-            <li class = "calc-btn">2</li>
-            <li class = "calc-btn">3</li>
-            <li class = "calc-btn">+</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">1</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">2</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">3</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">+</li>
         </ul>
         <ul>
-            <li class = "calc-btn">4</li>
-            <li class = "calc-btn">5</li>
-            <li class = "calc-btn">6</li>
-            <li class = "calc-btn">-</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">4</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">5</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">6</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">-</li>
         </ul>
         <ul>
-            <li class = "calc-btn">7</li>
-            <li class = "calc-btn">8</li>
-            <li class = "calc-btn">9</li>
-            <li class = "calc-btn">x</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">7</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">8</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">9</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">*</li>
         </ul>
         <ul>
-            <li class = "calc-btn">0</li>
-            <li class = "calc-btn">.</li>
-            <li class = "calc-btn">=</li>
-            <li class = "calc-btn">/</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">0</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">.</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">=</li>
+            <li class = "calc-btn" (click)="btnClicked($event)">/</li>
         </ul>
 
     </div>
     <div>
-        <button>Cancel</button>
+        <button (click)="cancel()" >Cancel</button>
         <button>Memory</button>
     </div>
 </div>
